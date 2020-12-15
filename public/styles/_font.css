@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'GmarketSansLight';
+    font-style: normal;
+    src: local('GmarketSansLight'), url('../fonts/GmarketSansWOFFLight.woff') format('woff');
+    src: local('GmarketSansLight'), url('../fonts/GmarketSansTTFLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    src: local('GmarketSansMedium'), url('../fonts/GmarketSansWOFFMedium.woff') format('woff');
+    src: local('GmarketSansMedium'), url('../fonts/GmarketSansTTFMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    font-style: normal;
+    src: local('GmarketSansBold'), url('../fonts/GmarketSansWOFFBold.woff') format('woff');
+    src: local('GmarketSansBold'), url('../fonts/GmarketSansTTFBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BOKEH';
+    font-weight: bold;
+    font-style: normal;
+    src: local('BOKEH'), url('../fonts/BOKEH.woff') format('woff'),
+    local('BOKEH'), url('../fonts/BOKEH.ttf') format('truetype');
+}
