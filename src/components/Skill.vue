@@ -97,9 +97,6 @@
                     &:hover .proficiency {
                         opacity: 1;
                     }
-                    &:not(:hover) .proficiency {
-                        opacity: 0;
-                    }
 
                     .skill_image {
                         display: inline-flex;
@@ -120,6 +117,7 @@
                         padding-top: 30%;
                         top:0;
                         font-size: 38px;
+                        opacity: 0;
 
                         .proficiency_title {
                             font-size: 28px;

@@ -3,6 +3,7 @@
         <div class="footer_container">
             <div class="source_copyright">
                 <a href="https://www.freepik.com/photos/technology">Home Background image Created by Freepik in Freepik.com<br></a>
+                <a href="https://www.freepik.com/">Contact Icons Created by Freepik in Freepik.com<br></a>
                 <a href="http://greenegg.co.kr/">BOKEH Font Designed by greenegg.co.kr</a>
             </div>
             <p class="site_copyright">Copyright ⓒ 2020. EDEN JIN. All Rights Reserved.</p>
