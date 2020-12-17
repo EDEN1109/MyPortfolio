@@ -127,7 +127,6 @@
 @media (max-width: 800px) {
     .Contact {
         width: 100%;
-        box-sizing: border-box;
         color: var(--default-color);
         background-color: var(--level1-color);
 
@@ -135,19 +134,22 @@
             width: 80%;
             margin-left: 10%;
             margin-right: 10%;
-            padding-bottom: 100px;
-            font-size: 72px;
+            padding-bottom: 50px;
+            font-size: 24px;
             text-align: left;
 
             .contact_top {
-                margin: 92px 0px 0px -200px;
+                margin: 5% 0% 5% -75px;
                 padding: 15px 0px 15px 0px;
-                width: 400px;
+                width: 150px;
                 left: 50%;
                 display: inline-block;
                 position: relative;
                 text-align: center;
+                font-size: 36px;
                 letter-spacing: 2.16px;
+                color: var(--neon-color);
+                -webkit-text-stroke: 0px;
                 background-color: var(--match1-color);
                 border-width: 0px 0px 6px 0px;
                 border-radius: 15px;
