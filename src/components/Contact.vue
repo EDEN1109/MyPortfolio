@@ -76,9 +76,7 @@
 
                     .contact_icon {
                         position: relative;
-                        margin: 0px 40px 0px 40px;
-                        width: 80px;
-                        height: 80px;
+                        margin: 0px 20px 0px 40px;
 
                         &:hover .contact_image {
                             transition: 0.3s;
@@ -90,23 +88,20 @@
                         }
 
                         .contact_image {
-                            position:absolute;
                             width: 80px;
-                            height: 80px;
                             padding: 12px;
                             border-radius: 30%;
                             background: var(--neon-color);
                         }
 
                         .contact_method {
-
-                            width: 80px;
-                            height: 80px;
-                            padding: 70% 12px 0px 12px;
-                            position:absolute;
+                            transform: translate( -50%, -50% );
+                            top: 42.5%;
+                            left: 50%;
                             opacity: 0;
+                            position:absolute;
                             text-align: center;
-                            font-size: 20px;
+                            font-size: 24px;
                         }
                     }
 
@@ -141,7 +136,7 @@
             .contact_top {
                 margin: 5% 0% 5% -75px;
                 padding: 15px 0px 15px 0px;
-                width: 150px;
+                width: 200px;
                 left: 50%;
                 display: inline-block;
                 position: relative;
@@ -168,14 +163,10 @@
 
                     .contact_icon {
                         position: relative;
-                        margin: 0px 40px 0px 40px;
-                        width: 50px;
-                        height: 50px;
+                        margin: 0px 10px 0px 20px;
 
                         .contact_image {
-                            position:absolute;
                             width: 50px;
-                            height: 50px;
                             padding: 12px;
                             border-radius: 30%;
                             background: var(--neon-color);
@@ -183,10 +174,9 @@
                         }
 
                         .contact_method {
-
-                            width: 50px;
-                            height: 50px;
-                            padding: 100% 12px 0px 12px;
+                            transform: translate( -50%, -50% );
+                            top: 42.5%;
+                            left: 50%;
                             position:absolute;
                             opacity: 1;
                             text-align: center;
