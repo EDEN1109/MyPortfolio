@@ -123,7 +123,34 @@
             }
 
             .home_button {
-                display: none;
+                margin: auto;
+                margin-bottom: 10%;
+                font-size: 18px;
+                padding: 10px 0px 10px 0px;
+                width: 120px;
+                left: 50%;
+                text-align: center;
+                letter-spacing: 1px;
+                border-width: 3px;
+                border-style: solid;
+                border-color: var(--neon-color);
+                color: var(--white-color);
+                background-color: rgba(0, 0, 0, 0.5);
+                
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                    -webkit-box-align: center; 
+                        -ms-flex-align: center; 
+                            align-items: center; 
+                -webkit-box-pack: center; 
+                    -ms-flex-pack: center;
+                        justify-content: center;
+
+                &:active {
+                    transition: 0.3s;
+                    background-color: var(--neon-color);
+                }
             }
         }
     }
