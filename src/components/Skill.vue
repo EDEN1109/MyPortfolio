@@ -153,7 +153,6 @@
         .skill_container {
             width: 80%;
             margin-left: 10%;
-            margin-right: 10%;
             padding-bottom: 50px;
             font-size: 24px;
             text-align: left;
@@ -178,20 +177,19 @@
             }
 
             .skill_list {
-                width: 80%;
-                margin-left: 10%;
-                margin-right: 10%;
                 display: block;
                 justify-content: space-between;
                 flex-wrap: wrap;
 
                 .skill_item {
+                    width: 278px;
                     position: relative;
                     margin-top: 50px;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
 
                     .skill_image {
-                        margin-left: 50%;
-                        transform: translate( -50%, 0% );
+                        margin-left: 0%;
                         display: inline-flex;
                         align-items: center;
                         justify-content: center;
