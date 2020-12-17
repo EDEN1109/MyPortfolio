@@ -129,12 +129,12 @@
             width: 80%;
             margin-left: 10%;
             margin-right: 10%;
-            padding-bottom: 50px;
+            padding-bottom: 100px;
             font-size: 24px;
             text-align: left;
 
             .contact_top {
-                margin: 5% 0% 5% -75px;
+                margin: 5% 0% 5% -100px;
                 padding: 15px 0px 15px 0px;
                 width: 200px;
                 left: 50%;
@@ -163,7 +163,7 @@
 
                     .contact_icon {
                         position: relative;
-                        margin: 0px 10px 0px 20px;
+                        margin: 0px 0px 0px 10px;
 
                         .contact_image {
                             width: 50px;

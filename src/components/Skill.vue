@@ -151,7 +151,7 @@
         .skill_container {
             width: 80%;
             margin-left: 10%;
-            padding-bottom: 50px;
+            padding-bottom: 100px;
             font-size: 24px;
             text-align: left;
 
