@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <MenuBar ref="menubar" @move="move"></MenuBar>
-    <Home ref="home"></Home>
+    <Home ref="home" @start="start"></Home>
     <About ref="about"></About>
     <Skill ref="skill"></Skill>
     <Project ref="project"></Project>
@@ -52,6 +52,9 @@ export default {
           break;
       }
       window.scroll({ top: pos, left: 0, behavior: 'smooth'})
+    },
+    start() {
+      window.scroll({ top: this.$refs.home.$el.clientHeight, left: 0, behavior: 'smooth'})
     }
   }
 };

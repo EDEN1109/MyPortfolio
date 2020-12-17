@@ -7,11 +7,10 @@
                     <div class="skill_image">
                         <img :src="skill.image"/>
                     </div>
-                    
-                        <div class="proficiency">
-                            <p class="proficiency_title">Proficiency</p>
-                            {{skill.proficiency}}
-                        </div>
+                    <div class="proficiency">
+                        <p class="proficiency_title">Proficiency</p>
+                        {{skill.proficiency}}
+                    </div>
                     <div class="skill_text defaultBold_font">
                         <div class="skill_text_wrapper">
                             {{skill.text}}
@@ -64,7 +63,8 @@
                 position: relative;
                 text-align: center;
                 letter-spacing: 2.16px;
-                border-width: 6px 6px 6px 6px;
+                background-color: var(--match2-color);
+                border-width: 0px 0px 6px 0px;
                 border-radius: 15px;
                 border-style: double ;
                 border-color: var(--point-color);
@@ -170,7 +170,8 @@
                 letter-spacing: 2.16px;
                 color: var(--neon-color);
                 -webkit-text-stroke: 0px;
-                border-width: 6px 6px 6px 6px;
+                background-color: var(--match2-color);
+                border-width: 0px 0px 6px 0px;
                 border-radius: 15px;
                 border-style: double ;
                 border-color: var(--point-color);
@@ -186,11 +187,11 @@
 
                 .skill_item {
                     position: relative;
-                    left: 50%;
                     margin-top: 50px;
 
                     .skill_image {
-                        margin-left: -139px;
+                        margin-left: 50%;
+                        transform: translate( -50%, 0% );
                         display: inline-flex;
                         align-items: center;
                         justify-content: center;
@@ -206,7 +207,8 @@
                     }
 
                     .proficiency {
-                        margin-left: -139px;
+                        margin-left: 50%;
+                        transform: translate( -50%, 0% );
                         width: 278px;
                         height: 278px;
                         position: absolute;
@@ -222,7 +224,8 @@
                     }
 
                     .skill_text {
-                        margin-left: -139px;
+                        margin-left: 50%;
+                        transform: translate( -50%, 0% );
                         width: 278px;
                         margin-top: 10px;
                         text-align: center;

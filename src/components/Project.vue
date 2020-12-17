@@ -4,7 +4,10 @@
             <p class="project_top title_font">PROJECT</p>
             <div class="project_list">
                 <div class="project_item" v-for="project in projectList" :key="project.id">
-                    <img :src="project.image" />
+                    <div class="project_imagebox">
+                        <img class="project_image" :src="project.image"/>
+                        <a class="project_link" :href="project.link" target="_blank" style="text-decoration:none">Go to Detail</a>
+                    </div>
                     <p class="project_title">{{project.title}}</p>
                     <p class="project_content defaultLight_font">{{project.content}}</p>
                     <p class="project_tag">{{project.tag}}</p>
@@ -20,12 +23,17 @@
         data() {
             return {
                 projectList: [
-                    {image: require('@/assets/finger.png'), title: 'Finger Game', content: '손가락을 이용하여 진행하는 게임으로 지능발달에 도움이 된다.', tag:'#Unity #CS #PC', date: '2019. 05. ~ 2019. 09.'},
-                    {image: require('@/assets/eyetracking.png'), title: 'Eye-Tracking Game', content: '안구인식을 통해 진행하는 게임으로 안구운동에 도움이 된다.', tag:'#Unity #CS #PC', date: '2019. 10. ~ 2020. 01.'}, 
-                    {image: require('@/assets/mosquito.png'), title: 'I AM MOSQUITO', content: '모기가 되어 야생에서 살아남는 게임으로 제작중에 있다.', tag:'#Unreal #C++ #PC #Mobile #Online', date: 'Web. 2020. 04. ~'}
+                    {image: require('@/assets/finger.png'), link: 'https://github.com/EDEN1109', title: 'Finger Game', content: '손가락을 이용하여 진행하는 게임으로 지능발달에 도움이 된다.', tag:'#Unity #CS #PC', date: '2019. 05. ~ 2019. 09.'},
+                    {image: require('@/assets/eyetracking.png'), link: 'https://github.com/EDEN1109', title: 'Eye-Tracking Game', content: '안구인식을 통해 진행하는 게임으로 안구운동에 도움이 된다.', tag:'#Unity #CS #PC', date: '2019. 10. ~ 2020. 01.'}, 
+                    {image: require('@/assets/mosquito.png'), link: 'https://github.com/EDEN1109', title: 'I AM MOSQUITO', content: '모기가 되어 야생에서 살아남는 게임으로 제작중에 있다.', tag:'#Unreal #C++ #PC #Mobile #Online', date: 'Web. 2020. 04. ~'}
                 ]
             }
-        }
+        },
+        methods: {
+          go(link) {
+              this.$emit('go', link)
+          },
+        },
     }
 </script>
 
@@ -54,7 +62,8 @@
                 position: relative;
                 text-align: center;
                 letter-spacing: 2.16px;
-                border-width: 6px 6px 6px 6px;
+                background-color: black;
+                border-width: 0px 0px 6px 0px;
                 border-radius: 15px;
                 border-style: double ;
                 border-color: var(--point-color);  
@@ -71,9 +80,33 @@
                     margin-top: 100px;
                     display: inline-block;
 
-                    img {
-                        width: 90%;
-                        margin: 0px;
+                    .project_imagebox {
+                        position: relative;
+                        &:hover .project_image{
+                            transition: 0.3s;
+                            opacity: 0.3;
+                        } 
+                        &:hover .project_link{
+                            transition: 0.3s;
+                            opacity: 1;
+                        }
+
+                        .project_image {
+                            width: 90%;
+                            margin: 0px;
+                        }
+
+                        .project_link {
+                            position: absolute;
+                            transform: translate( -50%, -50% );
+                            top: 50%;
+                            left: 45%;
+                            padding: 10px;
+                            opacity: 0;
+                            text-align: center;
+                            font-size: 30px;
+                            color: var(--point-color);
+                        }
                     }
 
                     .project_title {
@@ -132,7 +165,8 @@
                 letter-spacing: 2.16px;
                 color: var(--neon-color);
                 -webkit-text-stroke: 0px;
-                border-width: 6px 6px 6px 6px;
+                background-color: var(--match3-color);
+                border-width: 0px 0px 6px 0px;
                 border-radius: 15px;
                 border-style: double ;
                 border-color: var(--point-color);
@@ -149,10 +183,28 @@
                     margin-top: 50px;
                     display: inline-block;
 
-                    img {
-                        width: 100%;
-                        margin: 0px;
+                    .project_imagebox {
+                        position: relative;
+
+                        .project_image {
+                            width: 90%;
+                            margin: 0px;
+                            opacity: 0.3;
+                        }
+
+                        .project_link {
+                            position: absolute;
+                            transform: translate( -50%, -50% );
+                            top: 50%;
+                            left: 45%;
+                            padding: 10px;
+                            opacity: 1;
+                            text-align: center;
+                            font-size: 20px;
+                            color: var(--point-color);
+                        }
                     }
+
 
                     .project_title {
                         margin: 10px 0px 0px 0px;
