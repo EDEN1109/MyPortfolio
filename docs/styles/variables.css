@@ -1,11 +1,14 @@
 :root {
     --default-color: #111111;
     --title-color: #f5def5;
-    --neon-color: #ff00ff;
-    --point-color: #f8df6b;
+    --neon-color: #2dcccd;
+    --point-color: #339ce6;
     --level1-color: #04002b;
     --level2-color: #030022;
     --level3-color: #020016;
+    --match1-color: #06003c;
+    --match2-color: #050034;
+    --match3-color: #04002b;
     --white-color: #eeeeee;
     --tag-color: #989898;
 }
