@@ -25,7 +25,7 @@
                         .
                         <br><br>I have a great passion for games,
                         <br>efficient development and
-                        <br>never experienced user experience.
+                        <br>user experience never experienced.
                         <br><br>I'm a challenger.
                         <br><br>Because I am not afraid of the new environment.
                         <br><br><br>
@@ -183,23 +183,22 @@
 
                 .about_introText {
                     width: 50%;
-                        border-width: 10px;
-                        border-radius: 15px;
-                        border-style: double ;
-                        border-color: var(--neon-color);
+                    height: 100%;
+                    padding: 5%;
+                    border-width: 10px;
+                    border-radius: 15px;
+                    border-style: double ;
+                    border-color: var(--neon-color);
 
                     .about_introTitle {
                         width: 100%;
-                        padding-top: 5%;
                         text-align: center;
-                        margin-top: 10px;
                         font-size: 34px;
                     }
                     .about_introDetail {
-                        width: 90%;
-                        height: 90%;
-                        padding: 5% 5% 5% 5%;
-                        margin-top: 20px;
+                        width: 100%;
+                        height: 100%;
+                        margin-top: 10%;
                         text-align: center;
                         font-size: 24px;
 
