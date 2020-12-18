@@ -2,12 +2,36 @@
     <div class="About">
         <div class="about_container">
             <p class="about_top title_font">ABOUT</p>
-            <div class="about_purpose">
-                <p>아마추어 게임 개발자의</p>
-                <p>나름 기록해본 게임 개발의 발자취들</p>
+            <div class="about_strengthList">
+                <div class="about_strengthItem" v-for="strength in strengthList" :key="strength.id">
+                    <div class="about_strengthImage">
+                        <img :src="strength.image"/>
+                    </div>
+                    <p class="about_strengthText defaultBold_font">{{strength.text}}</p>
+                    <p class="about_strengthExplan defaultLight_font">{{strength.explan}}</p>
+                </div>
             </div>
-            <div class="about_detail">
-                <p>전문 게임 개발자를 꿈꾸는 아마추어 게임 개발자 진이든입니다. 본 페이지는 게임 개발자를 향한 진이든의 게임 개발 발자취들을 담고 있습니다.</p>
+            <div class="about_introduce">
+                <div class="about_introImage">
+                        <img src="../assets/me_color.png"/>
+                </div>
+                <div class="about_introText">
+                    <p class="about_introTitle defaultBold_font">&lt;&lt; Developer Eden Jin &gt;&gt;</p>
+                    <div class="about_introDetail defaultLight_font">
+                        I'm Game Developer in 
+                        <a href="https://www.google.com/maps/@37.0190952,126.9156497,3a,75y,67.4h,91.32t/data=!3m8!1e1!3m6!1sAF1QipM9Z_Io5TvMVEl3OiiOHBnLLC9vsodtH7ATZx6P!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipM9Z_Io5TvMVEl3OiiOHBnLLC9vsodtH7ATZx6P%3Dw203-h100-k-no-pi-0-ya97.91478-ro-0-fo100!7i8704!8i4352?hl=ko"
+                        target="_blank" style="text-decoration:none">
+                        South Korea</a>
+                        .
+                        <br><br>I have a great passion for games,
+                        <br>efficient development and
+                        <br>never experienced user experience.
+                        <br><br>I'm a challenger.
+                        <br><br>Because I am not afraid of the new environment.
+                        <br><br><br>
+                        <a href="javascript:void(0);" @click="makeFun()" style="text-decoration:none">Let's Make Something Fun!</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -15,16 +39,29 @@
 
 <script>
     export default {
-        
+        data() {
+            return {
+                strengthList: [
+                    { image: require('@/assets/Fast.png'), text: 'Fast', explan: 'I learn and apply new things quickly. It\'s the biggest strength I\'ve ever had.'},
+                    { image: require('@/assets/Responsive.png'), text: 'Responsive', explan: 'My Games will work on any device, Mobile, Tablet, PC even Web.'},
+                    { image: require('@/assets/Intuitive.png'), text: 'Intuitive', explan: 'Coding with Unity Editor facilitates collaboration with others.'},
+                    { image: require('@/assets/Diversity.png'), text: 'Diversity', explan: 'I have developed games in various development fields such as VR, AR, 2D, and 3D.'},]
+            }
+        },
+         methods: { 
+            makeFun() {
+                this.$emit('makeFun')
+            },
+         }
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @media (min-width: 801px) {
     .About {
         width: 100%;
         box-sizing: border-box;
-        color: var(--default-color);
+        color: var(--white-color);
         background-color: var(--level1-color);
 
         .about_container {
@@ -51,16 +88,126 @@
                 border-color: var(--point-color);
             }
 
-            .about_purpose {
-                margin: 80px 0px 0px 0px;
-                font-size: 32px;
-                color: #232323;
+            .about_strengthList {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                width: 100%;
+                margin-top: 90px;
+
+                .about_strengthItem {
+                    &:hover {
+                        transform: scale(1.05);
+                        transition: 0.3s;
+                    }
+                    &:hover .about_strengthImage { 
+                        transition: 0.3s;                       
+                        border-width: 0px 0px 10px 0px;
+                    }
+                    &:not(:hover) .about_strengthImage { 
+                        transition: 0.3s;                       
+                        border-width: 0px 0px 0px 0px;
+                    }
+
+                    .about_strengthImage {
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 80px;
+                        height: 80px;
+                        padding: 12px;
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                        border-radius: 20%;
+                        border-style: double ;
+                        border-color: var(--neon-color);
+                        background: var(--point-color);
+
+
+                        img {
+                            width: 70px;
+                            height: 70px;
+                        }
+                    }
+                
+                    .about_strengthText {
+                        width: 350px;
+                        text-align: center;
+                        margin-top: 10px;
+                        font-size: 20px;
+                    }
+                    .about_strengthExplan {
+                        width: 350px;
+                        height: 80px;
+                        margin-top: 15px;
+                        text-align: center;
+                        font-size: 16px;
+                    }
+                }
             }
 
-            .about_detail {
-                margin: 43px 0px 0px 0px;
+            .about_introduce {
+                width: 100%;
+                margin: 100px 0px 0px 0px;
                 font-size: 24px;
-                color: #232323;
+                display: inline-flex;
+
+
+                .about_introImage {
+                    padding-top: 2.5%;
+                    padding-left: 5%;
+                    width: 50%;
+
+                    img {
+                        position: relative;
+                        width: 80%;
+                        border-radius: 20%;
+                        border-style: double ;
+                        border-color: var(--neon-color);
+                        -webkit-filter: grayscale(100%);
+
+                        &:hover {
+                            transition: 1s;      
+                            -webkit-filter: grayscale(0%);
+                            border-width: 0px 0px 10px 0px;
+                            margin-top: -1%;
+                        }
+                        &:not(:hover) { 
+                            transition: 0.3s;    
+                            -webkit-filter: grayscale(100%);
+                            border-width: 0px 0px 0px 0px;
+                            margin-top: 0%;
+                        }
+                    }
+                }
+
+                .about_introText {
+                    width: 50%;
+                        border-width: 10px;
+                        border-radius: 15px;
+                        border-style: double ;
+                        border-color: var(--neon-color);
+
+                    .about_introTitle {
+                        width: 100%;
+                        padding-top: 5%;
+                        text-align: center;
+                        margin-top: 10px;
+                        font-size: 34px;
+                    }
+                    .about_introDetail {
+                        width: 90%;
+                        height: 90%;
+                        padding: 5% 5% 5% 5%;
+                        margin-top: 20px;
+                        text-align: center;
+                        font-size: 24px;
+
+                        a {
+                            color: var(--point-color);
+                        }
+                    }   
+                }
             }
         }
     }
@@ -68,7 +215,7 @@
 @media (max-width: 800px) {
     .About {
         width: 100%;
-        color: var(--default-color);
+        color: var(--white-color);
         background-color: var(--level1-color);
 
         .about_container {
@@ -99,16 +246,105 @@
                 border-color: var(--point-color);
             }
 
-            .about_purpose {
-                margin: 4% 0% 0% 4%;
-                font-size: 24px;
-                color: #232323;
+            .about_strengthList {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                width: 100%;
+                margin-top: 40px;
+
+                .about_strengthItem {
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+
+                    .about_strengthImage {
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 60px;
+                        height: 60px;
+                        padding: 12px;
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                        border-radius: 20%;
+                        border-style: double ;
+                        border-color: var(--neon-color);
+                        background: var(--point-color);
+
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                
+                    .about_strengthText {
+                        width: 350px;
+                        text-align: center;
+                        margin-top: 10px;
+                        font-size: 18px;
+                    }
+                    .about_strengthExplan {
+                        width: 350px;
+                        height: 80px;
+                        margin-top: 15px;
+                        text-align: center;
+                        font-size: 14px;
+                    }
+                }
             }
 
-            .about_detail {
-                margin: 3% 0% 0% 4%;
-                font-size: 16px;
-                color: #232323;
+            .about_introduce {
+                width: 100%;
+                margin: 80px 0px 0px 0px;
+                display: block;
+
+
+                .about_introImage {
+                    width: 250px;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                    padding-top: 2.5%;
+
+                    img {
+                        position: relative;
+                        width: 250px;
+                        border-radius: 20%;
+                        border-style: double ;
+                        border-color: var(--neon-color);
+                    }
+                }
+
+                .about_introText {
+                    margin-top: 20px;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                    width: 90%;
+                    border-width: 10px;
+                    border-radius: 15px;
+                    border-style: double ;
+                    border-color: var(--neon-color);
+
+                    .about_introTitle {
+                        width: 100%;
+                        padding-top: 2px;
+                        text-align: center;
+                        margin-top: 10px;
+                        font-size: 18px;
+                    }
+                    .about_introDetail {
+                        width: 90%;
+                        height: 95%;
+                        padding: 2.5% 5% 2.5% 5%;
+                        margin-top: 20px;
+                        text-align: center;
+                        font-size: 16px;
+
+                        a {
+                            color: var(--point-color);
+                        }
+                    }   
+                }
             }
         }
     }

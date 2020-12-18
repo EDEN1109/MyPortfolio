@@ -2,7 +2,7 @@
   <div id="app">
     <MenuBar ref="menubar" @move="move"></MenuBar>
     <Home ref="home" @start="start"></Home>
-    <About ref="about"></About>
+    <About ref="about" @makeFun="makeFun"></About>
     <Skill ref="skill"></Skill>
     <Project ref="project"></Project>
     <Contact ref="contact"></Contact>
@@ -55,6 +55,10 @@ export default {
     },
     start() {
       window.scroll({ top: this.$refs.home.$el.clientHeight, left: 0, behavior: 'smooth'})
+    },
+    makeFun()
+    {
+      window.scroll({ top: this.$refs.home.$el.clientHeight + this.$refs.about.$el.clientHeight + this.$refs.skill.$el.clientHeight + this.$refs.project.$el.clientHeight, left: 0, behavior: 'smooth'})
     }
   }
 };

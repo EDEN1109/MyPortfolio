@@ -2,7 +2,11 @@
     <div class="Footer">
         <div class="footer_container">
             <div class="source_copyright">
-                <a href="https://www.freepik.com/photos/technology">Home Background image Created by Freepik in Freepik.com<br></a>
+                <a href="https://www.freepik.com/photos/technology">Home Background Image Created by Freepik in Freepik.com<br></a>
+                <a href="https://www.flaticon.com/authors/pixel-perfect">Fast Icon Created by Pixel perfect in Flaticon.com<br></a>
+                <a href="https://www.flaticon.com/authors/gregor-cresnar">Intuitive Icon Created by Gregor Cresnar in Flaticon.com<br></a>
+                <a href="https://www.freepik.com/">Responsive Icon Created by Freepik in Freepik.com<br></a>
+                <a href="https://www.flaticon.com/authors/pixel-perfect">Diversity Icon Created by Pixel perfect in Flaticon.com<br></a>
                 <a href="https://www.freepik.com/">Contact Icons Created by Freepik in Freepik.com<br></a>
                 <a href="http://greenegg.co.kr/">BOKEH Font Designed by greenegg.co.kr</a>
             </div>
@@ -30,7 +34,7 @@
                 margin-left: 10%;
                 margin-right: 10%;
                 padding: 150px 0px 65px 0px;
-                font-size: 18px;
+                font-size: 14px;
                 text-align: right;
 
                 .source_copyright {
@@ -55,7 +59,7 @@
                 margin-left: 10%;
                 margin-right: 10%;
                 padding: 100px 0px 65px 0px;
-                font-size: 10px;
+                font-size: 9px;
                 text-align: right;
 
                 .source_copyright {

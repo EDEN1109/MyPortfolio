@@ -102,21 +102,26 @@
                         display: inline-flex;
                         align-items: center;
                         justify-content: center;
-                        width: 278px;
-                        height: 278px;
+                        width: 250px;
+                        height: 250px;
                         border-radius: 50%;
                         background: #ffffff;
+
+                        img {
+                            width: 200px;
+                            height: 200px;
+                        }
                     }
 
                     
                     .proficiency {
-                        width: 278px;
-                        height: 278px;
+                        width: 250px;
+                        height: 250px;
                         position: absolute;
                         text-align: center;
                         padding-top: 30%;
                         top:0;
-                        font-size: 38px;
+                        font-size: 32px;
                         opacity: 0;
 
                         .proficiency_title {
@@ -131,7 +136,7 @@
                         margin-top: 10px;
                         text-align: center;
                         font-weight: bold;
-                        font-size: 56px;
+                        font-size: 50px;
 
                         .skill_text_wrapper {
                             display: inline-block;
@@ -181,7 +186,7 @@
                 flex-wrap: wrap;
 
                 .skill_item {
-                    width: 278px;
+                    width: 180px;
                     position: relative;
                     margin-top: 50px;
                     margin-left: 50%;
@@ -192,30 +197,31 @@
                         display: inline-flex;
                         align-items: center;
                         justify-content: center;
-                        width: 278px;
-                        height: 278px;
+                        width: 180px;
+                        height: 180px;
                         border-radius: 50%;
                         background: #ffffff;
                         opacity: 0.3;
 
-                        .image {
-                            width: 100%;
+                        img {
+                            width: 150px;
+                            height: 150px;
                         }
                     }
 
                     .proficiency {
                         margin-left: 50%;
                         transform: translate( -50%, 0% );
-                        width: 278px;
-                        height: 278px;
+                        width: 180px;
+                        height: 180px;
                         position: absolute;
                         text-align: center;
-                        padding-top: 100px;
+                        padding-top: 50px;
                         top:0;
-                        font-size: 36px;
+                        font-size: 24px;
 
                         .proficiency_title {
-                            font-size: 28px;
+                            font-size: 18px;
                             padding-bottom: 15px;
                         }
                     }
@@ -223,10 +229,10 @@
                     .skill_text {
                         margin-left: 50%;
                         transform: translate( -50%, 0% );
-                        width: 278px;
+                        width: 180px;
                         margin-top: 10px;
                         text-align: center;
-                        font-size: 30px;
+                        font-size: 28px;
                     }
                 }
             }

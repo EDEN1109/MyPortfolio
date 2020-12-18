@@ -62,7 +62,7 @@
                 position: relative;
                 text-align: center;
                 letter-spacing: 2.16px;
-                background-color: black;
+                background-color: var(--match3-color);
                 border-width: 0px 0px 6px 0px;
                 border-radius: 15px;
                 border-style: double ;
