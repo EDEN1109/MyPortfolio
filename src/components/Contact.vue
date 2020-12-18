@@ -12,7 +12,9 @@
                         </div>
                     </div>
                     <div class="contact_privacy defaultLight_font">
+                        <a :href="contact.link" target="_blank" style="text-decoration:none">
                         {{contact.privacy}}
+                        </a>
                     </div>
                 </div>
             </div>
@@ -25,9 +27,10 @@
         data() {
             return {
                 contactList: [
-                    { image: require('@/assets/email.png'), method: 'Email', privacy: 'eden-1109@naver.com'},
-                    { image: require('@/assets/hp.png'), method: 'H.P.', privacy: '+82 - 10 - 4355 -8851'},
-                    { image: require('@/assets/blog.png'), method: 'Blog', privacy: 'poison-dog-do-everything.tistory.com'},]
+                    { image: require('@/assets/email.png'), method: 'Email', privacy: 'eden-1109@naver.com', link: ''},
+                    { image: require('@/assets/hp.png'), method: 'H.P.', privacy: '+82 - 10 - 4355 -8851', link: ''},
+                    { image: require('@/assets/blog.png'), method: 'Blog', privacy: 'poison-dog-do-everything.tistory.com', link: 'http://poison-dog-do-everything.tistory.com'},
+                    { image: require('@/assets/github.png'), method: 'GitHub', privacy: 'github.com/EDEN1109', link: 'http://github.com/EDEN1109'},]
             }
         },
     }
