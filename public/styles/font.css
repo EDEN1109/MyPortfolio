@@ -26,3 +26,11 @@
     src: url('../fonts/BOKEH.woff') format('woff');
     src: url('../fonts/BOKEH.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Wemakeprice';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Wemakeprice-Bold.woff') format('woff');
+    src: url('../fonts/Wemakeprice-Bold.ttf') format('truetype');
+}

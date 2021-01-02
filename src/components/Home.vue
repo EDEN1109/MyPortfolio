@@ -3,7 +3,7 @@
         <div class="home_blank"></div>
         <div class="home_container">
             <div class="home_title">
-                <h1 class="title_font">GAME DEVELOPER<br>EDEN JIN</h1>
+                <h1 class="title_font">{{$t('homeMessages.title')}}<br>{{$t('homeMessages.name')}}</h1>
             </div>
             <button class="home_button" @click="start()">See More</button>
         </div>
@@ -15,7 +15,7 @@
         methods: {
             start() {
                 this.$emit('start')
-            },
+            },            
         }
     }
 </script>

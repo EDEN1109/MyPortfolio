@@ -59,7 +59,13 @@ export default {
     makeFun()
     {
       window.scroll({ top: this.$refs.home.$el.clientHeight + this.$refs.about.$el.clientHeight + this.$refs.skill.$el.clientHeight + this.$refs.project.$el.clientHeight, left: 0, behavior: 'smooth'})
-    }
+    },    
+  },
+  created() {
+      let locale = navigator.language || navigator.userLanguage
+      locale = locale.substring(0, 2)
+      if (locale !== 'ko') locale = 'en'
+      this.$i18n.locale = locale
   }
 };
 </script>
@@ -79,6 +85,6 @@ export default {
 .title_font {
   color: var(--title-color);
   -webkit-text-stroke: 2px var(--neon-color);
-  font-family: 'BOKEH';
+  font-family: 'BOKEH', 'Wemakeprice';
 }
 </style>

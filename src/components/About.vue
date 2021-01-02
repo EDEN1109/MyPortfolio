@@ -3,7 +3,7 @@
         <div class="about_container">
             <p class="about_top title_font">ABOUT</p>
             <div class="about_strengthList">
-                <div class="about_strengthItem" v-for="strength in strengthList" :key="strength.id">
+                <div class="about_strengthItem" v-for="strength in $t('aboutMessages.strengthList')" :key="strength.id">
                     <div class="about_strengthImage">
                         <img :src="strength.image"/>
                     </div>
@@ -16,20 +16,29 @@
                         <img src="../assets/me_color.png"/>
                 </div>
                 <div class="about_introText">
-                    <p class="about_introTitle defaultBold_font">&lt;&lt; Developer Eden Jin &gt;&gt;</p>
+                    <p class="about_introTitle defaultBold_font">&lt;&lt; {{$t('aboutMessages.introName')}} &gt;&gt;</p>
                     <div class="about_introDetail defaultLight_font">
-                        I'm Game Developer in 
+                        {{$t('aboutMessages.introFirstLine')}}
                         <a href="https://www.google.com/maps/@37.0190952,126.9156497,3a,75y,67.4h,91.32t/data=!3m8!1e1!3m6!1sAF1QipM9Z_Io5TvMVEl3OiiOHBnLLC9vsodtH7ATZx6P!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipM9Z_Io5TvMVEl3OiiOHBnLLC9vsodtH7ATZx6P%3Dw203-h100-k-no-pi-0-ya97.91478-ro-0-fo100!7i8704!8i4352?hl=ko"
                         target="_blank" style="text-decoration:none">
-                        South Korea</a>
+                        {{$t('aboutMessages.introLocate')}}</a>
                         .
-                        <br><br>I have a great passion for games,
-                        <br>efficient development and
-                        <br>user experience never experienced.
-                        <br><br>I'm a challenger.
-                        <br><br>Because I am not afraid of the new environment.
+
+                        <div class="antecedents defaultLight_font">
+                            <ul>
+                            <li v-for="antecedent in $t('aboutMessages.antecedentList')" :key="antecedent.id">
+                            <br><br>{{antecedent.date}}
+                            <a :href="antecedent.link" target="_blank" style="text-decoration:none">{{antecedent.organization}}</a>
+                            {{antecedent.detail}}
+                            </li>
+                            </ul>
+                        </div>
+
+                        <div v-for="introText in $t('aboutMessages.introTextList')" :key="introText.id">
+                            <br><br>{{introText}}
+                        </div>
                         <br><br><br>
-                        <a href="javascript:void(0);" @click="makeFun()" style="text-decoration:none">Let's Make Something Fun!</a>
+                        <a href="javascript:void(0);" @click="makeFun()" style="text-decoration:none">{{$t('aboutMessages.introMakeFun')}}</a>
                     </div>
                 </div>
             </div>
@@ -41,18 +50,14 @@
     export default {
         data() {
             return {
-                strengthList: [
-                    { image: require('@/assets/Fast.png'), text: 'Fast', explan: 'I learn and apply new things quickly. It\'s the biggest strength I\'ve ever had.'},
-                    { image: require('@/assets/Responsive.png'), text: 'Responsive', explan: 'My Games will work on any device, Mobile, Tablet, PC even Web.'},
-                    { image: require('@/assets/Intuitive.png'), text: 'Intuitive', explan: 'Coding with Unity Editor facilitates collaboration with others.'},
-                    { image: require('@/assets/Diversity.png'), text: 'Diversity', explan: 'I have developed games in various development fields such as VR, AR, 2D, and 3D.'},]
+                
             }
         },
-         methods: { 
+        methods: { 
             makeFun() {
                 this.$emit('makeFun')
             },
-         }
+        }
     }
 </script>
 
@@ -204,6 +209,10 @@
 
                         a {
                             color: var(--point-color);
+                        }
+
+                        .antecedents {
+                            text-align: left;
                         }
                     }   
                 }

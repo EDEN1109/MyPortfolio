@@ -3,7 +3,7 @@
         <div class="project_container">
             <p class="project_top title_font">PROJECT</p>
             <div class="project_list">
-                <div class="project_item" v-for="project in projectList" :key="project.id">
+                <div class="project_item" v-for="project in $t('projectMessages.projectList')" :key="project.id">
                     <div class="project_imagebox">
                         <img class="project_image" :src="project.image"/>
                         <a class="project_link" :href="project.link" target="_blank" style="text-decoration:none">Go to Detail</a>
@@ -22,11 +22,7 @@
     export default {
         data() {
             return {
-                projectList: [
-                    {image: require('@/assets/finger.png'), link: 'https://github.com/EDEN1109', title: 'Finger Game', content: '손가락을 이용하여 진행하는 게임으로 지능발달에 도움이 된다.', tag:'#Unity #CS #PC', date: '2019. 05. ~ 2019. 09.'},
-                    {image: require('@/assets/eyetracking.png'), link: 'https://github.com/EDEN1109', title: 'Eye-Tracking Game', content: '안구인식을 통해 진행하는 게임으로 안구운동에 도움이 된다.', tag:'#Unity #CS #PC', date: '2019. 10. ~ 2020. 01.'}, 
-                    {image: require('@/assets/mosquito.png'), link: 'https://github.com/EDEN1109', title: 'I AM MOSQUITO', content: '모기가 되어 야생에서 살아남는 게임으로 제작중에 있다.', tag:'#Unreal #C++ #PC #Mobile #Online', date: 'Web. 2020. 04. ~'}
-                ]
+                
             }
         },
         methods: {

@@ -3,12 +3,12 @@
         <div class="skill_container">
             <p class="skill_top title_font">SKILL</p>
             <div class="skill_list">
-                <div class="skill_item" v-for="skill in skillList" :key="skill.id">
+                <div class="skill_item" v-for="skill in $t('skillMessages.skillList')" :key="skill.id">
                     <div class="skill_image">
                         <img :src="skill.image"/>
                     </div>
                     <div class="proficiency">
-                        <p class="proficiency_title">Proficiency</p>
+                        <p class="proficiency_title">{{$t('skillMessages.proficiency')}}</p>
                         {{skill.proficiency}}
                     </div>
                     <div class="skill_text defaultBold_font">
@@ -28,11 +28,7 @@
     export default {
         data() {
             return {
-                skillList: [
-                    { image: require('@/assets/Unity_logo.png'), text: 'Unity', proficiency: 'Intermediate'},
-                    { image: require('@/assets/Unreal_logo.png'), text: 'Unreal', proficiency: 'Basic'},
-                    { image: require('@/assets/CSharp_logo.png'), text: 'C#', proficiency: 'Intermediate'},
-                    { image: require('@/assets/C++_logo.png'), text: 'C++', proficiency: 'Intermediate'},]
+                
             }
         },
     }
