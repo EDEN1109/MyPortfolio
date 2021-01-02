@@ -37,13 +37,13 @@ const messages = {
     },    
     projectMessages: {
       projectList: [
-        {image: require('@/assets/finger.png'), link: 'https://github.com/EDEN1109', title: 'BioLab', content: '손가락을 이용하여 진행하는 게임으로 지능발달에 도움이 된다.', tag:'#Unity #CS #VR #PC', date: '2020. 07. ~ 2020. 08.'},
-        {image: require('@/assets/eyetracking.png'), link: 'https://github.com/EDEN1109', title: 'VR Camera', content: '안구인식을 통해 진행하는 게임으로 안구운동에 도움이 된다.', tag:'#Unity #CS #PC #Mobile #Tablet #Web', date: '2020. 08.'}, 
-        {image: require('@/assets/mosquito.png'), link: 'https://github.com/EDEN1109', title: 'Seconds', content: '모기가 되어 야생에서 살아남는 게임으로 제작중에 있다.', tag:'#Unity #CS #Mobile', date: '2021. 01. ~'}]
+        {image: require('@/assets/BioLab.png'), link: 'https://github.com/EDEN1109/BioLab', title: 'BioLab', content: 'A game that defends the destruction of mankind by making a vaccine.', tag:'#Unity #CS #VR #PC', date: '2020. 07. ~ 2020. 08.'},
+        {image: require('@/assets/VRCamera.png'), link: 'https://github.com/EDEN1109/VRCamera', title: 'VR Camera', content: 'It is a VR camera that automatically changes the platform of VR content (PC, tablet, mobile, etc.).', tag:'#Unity #CS #PC #Mobile #Tablet #Web', date: '2020. 08.'}, 
+        {image: require('@/assets/Seconds.png'), link: 'https://github.com/EDEN1109/Seconds', title: 'Seconds', content: 'This is a mobile moment action game that clears the stage by demonstrating your instant response skills.', tag:'#Unity #CS #Mobile', date: '2021. 01. ~'}]
     }    
   },
   ko: {
-    home: {
+    homeMessages: {
       title: '게임 개발자',
       name: '진이든'
     },
@@ -55,7 +55,7 @@ const messages = {
         { image: require('@/assets/Diversity.png'), text: '다양성', explan: '저는 VR, AR, 2D, 그리고 3D 등 많은 분야에서 개발해 보았습니다.'},],
       antecedentList: [
         { date: '2017.02 ~ 2021.02', organization: '한국기술교육대학교', link: 'http://www.koreatech.ac.kr/kor/Main.do', detail: '컴퓨터공학부'},
-        { date: '2020.06 ~ 2020.08', organization: '(주) 듀코젠)', link: 'https://www.ducogen.net/', detail: '단기 인턴쉽'},],
+        { date: '2020.06 ~ 2020.08', organization: '(주) 듀코젠', link: 'https://www.ducogen.net/', detail: '단기 인턴쉽'},],
       introName: '개발자 진이든',
       introFirstLine: '게임 개발자로 일하고 있는 진이든입니다. 위치 : ',
       introLocate: '대한민국',
@@ -73,9 +73,9 @@ const messages = {
     },    
     projectMessages: {
       projectList: [
-        {image: require('@/assets/finger.png'), link: 'https://github.com/EDEN1109', title: 'BioLab', content: '손가락을 이용하여 진행하는 게임으로 지능발달에 도움이 된다.', tag:'#Unity #CS #VR #PC', date: '2020. 07. ~ 2020. 08.'},
-        {image: require('@/assets/eyetracking.png'), link: 'https://github.com/EDEN1109', title: 'VR Camera', content: '안구인식을 통해 진행하는 게임으로 안구운동에 도움이 된다.', tag:'#Unity #CS #PC #Mobile #Tablet #Web', date: '2020. 08.'}, 
-        {image: require('@/assets/mosquito.png'), link: 'https://github.com/EDEN1109', title: 'Seconds', content: '모기가 되어 야생에서 살아남는 게임으로 제작중에 있다.', tag:'#Unity #CS #Mobile', date: '2021. 01. ~'}]
+        {image: require('@/assets/BioLab.png'), link: 'https://github.com/EDEN1109/BioLab', title: 'BioLab', content: '백신을 제작해 질병으로 인해 인류가 멸망하는 것을 디펜스 하는 게임.', tag:'#Unity #CS #VR #PC', date: '2020. 07. ~ 2020. 08.'},
+        {image: require('@/assets/VRCamera.png'), link: 'https://github.com/EDEN1109/VRCamera', title: 'VR Camera', content: 'VR 컨텐츠의 플랫폼 변경(PC와 태블렛, 모바일 등)을 자동으로 해주는 VR 카메라입니다.', tag:'#Unity #CS #PC #Mobile #Tablet #Web', date: '2020. 08.'}, 
+        {image: require('@/assets/Seconds.png'), link: 'https://github.com/EDEN1109/Seconds', title: 'Seconds', content: '모바일 순간 액션게임으로 순발력을 발휘하여 스테이지를 클리어하는 게임입니다.', tag:'#Unity #CS #Mobile', date: '2021. 01. ~'}]
     }
   }
 }

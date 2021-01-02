@@ -351,6 +351,9 @@
                         a {
                             color: var(--point-color);
                         }
+                        .antecedents {
+                            text-align: left;
+                        }
                     }   
                 }
             }
