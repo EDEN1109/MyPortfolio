@@ -1,6 +1,7 @@
 <template>
   <div class="app_nav">
         <button class="title_font" v-for="menu in menuList" :key="menu.id" @click="move(menu)">{{menu}}</button>
+        <button class="title_font" @click="changeLocale()">{{$t('navMessages.language')}}</button>
   </div>
 </template>
 
@@ -17,6 +18,9 @@ export default {
   methods: {
     move(menu) {
         this.$emit('move', menu)
+    },
+    changeLocale() {
+        this.$emit('changeLocale')
     },
   },
 }

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <MenuBar ref="menubar" @move="move"></MenuBar>
+    <MenuBar ref="menubar" @move="move" @changeLocale="changeLocale"></MenuBar>
     <Home ref="home" @start="start"></Home>
     <About ref="about" @makeFun="makeFun"></About>
     <Skill ref="skill"></Skill>
@@ -60,15 +60,26 @@ export default {
     {
       window.scroll({ top: this.$refs.home.$el.clientHeight + this.$refs.about.$el.clientHeight + this.$refs.skill.$el.clientHeight + this.$refs.project.$el.clientHeight, left: 0, behavior: 'smooth'})
     },    
+    changeLocale()
+    {
+      if(this.$i18n.locale == 'ko')
+      {
+        this.$i18n.locale = 'en';
+      }
+      else
+      {
+        this.$i18n.locale = 'ko';
+      }
+    }
   },
   created() {
-      let locale = navigator.language || navigator.userLanguage
-      locale = locale.substring(0, 2)
+      let locale = (navigator.language || navigator.userLanguage).substr(0, 2);
       if (locale !== 'ko') locale = 'en'
       this.$i18n.locale = locale
   }
 };
 </script>
+
 
 <style lang="scss">
 #app {

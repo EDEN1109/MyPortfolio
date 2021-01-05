@@ -7,6 +7,9 @@ Vue.config.productionTip = false
 
 const messages = {
   en: {
+    navMessages: {
+      language: '한국어'
+    },
     homeMessages: {
       title: 'Game Developer',
       name: 'Eden Jin'
@@ -43,6 +46,9 @@ const messages = {
     }    
   },
   ko: {
+    navMessages: {
+      language: 'English'
+    },
     homeMessages: {
       title: '게임 개발자',
       name: '진이든'
