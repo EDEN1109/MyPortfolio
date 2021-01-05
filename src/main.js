@@ -40,9 +40,9 @@ const messages = {
     },    
     projectMessages: {
       projectList: [
-        {image: require('@/assets/projectImages/BioLab.png'), link: 'https://github.com/EDEN1109/BioLab', title: 'BioLab', content: 'A game that defends the destruction of mankind by making a vaccine.', tag:'#Unity #CS #VR #PC', date: '2020. 07. ~ 2020. 08.'},
-        {image: require('@/assets/projectImages/VRCamera.png'), link: 'https://github.com/EDEN1109/VRCamera', title: 'VR Camera', content: 'It is a VR camera that automatically changes the platform of VR content (PC, tablet, mobile, etc.).', tag:'#Unity #CS #PC #Mobile #Tablet #Web', date: '2020. 08.'}, 
-        {image: require('@/assets/projectImages/Seconds.png'), link: 'https://github.com/EDEN1109/Seconds', title: 'Seconds', content: 'This is a mobile moment action game that clears the stage by demonstrating your instant response skills.', tag:'#Unity #CS #Mobile', date: '2021. 01. ~'}]
+        {image: require('@/assets/projectImages/BioLab.png'), link: 'https://github.com/EDEN1109/BioLab/wiki', title: 'BioLab', content: 'A game that defends the destruction of mankind by making a vaccine.', tag:'#Unity #CS #VR #PC', date: '2020. 07. ~ 2020. 08.'},
+        {image: require('@/assets/projectImages/VRCamera.png'), link: 'https://github.com/EDEN1109/VRCamera/wiki', title: 'VR Camera', content: 'It is a VR camera that automatically changes the platform of VR content (PC, tablet, mobile, etc.).', tag:'#Unity #CS #PC #Mobile #Tablet #Web', date: '2020. 08.'}, 
+        {image: require('@/assets/projectImages/Seconds.png'), link: 'https://github.com/EDEN1109/Seconds/wiki', title: 'Seconds', content: 'This is a mobile moment action game that clears the stage by demonstrating your instant response skills.', tag:'#Unity #CS #Mobile', date: '2021. 01. ~'}]
     }    
   },
   ko: {
@@ -79,9 +79,9 @@ const messages = {
     },    
     projectMessages: {
       projectList: [
-        {image: require('@/assets/projectImages/BioLab.png'), link: 'https://github.com/EDEN1109/BioLab', title: 'BioLab', content: '백신을 제작해 질병으로 인해 인류가 멸망하는 것을 디펜스 하는 게임.', tag:'#Unity #CS #VR #PC', date: '2020. 07. ~ 2020. 08.'},
-        {image: require('@/assets/projectImages/VRCamera.png'), link: 'https://github.com/EDEN1109/VRCamera', title: 'VR Camera', content: 'VR 컨텐츠의 플랫폼 변경(PC와 태블렛, 모바일 등)을 자동으로 해주는 VR 카메라입니다.', tag:'#Unity #CS #PC #Mobile #Tablet #Web', date: '2020. 08.'}, 
-        {image: require('@/assets/projectImages/Seconds.png'), link: 'https://github.com/EDEN1109/Seconds', title: 'Seconds', content: '모바일 순간 액션게임으로 순발력을 발휘하여 스테이지를 클리어하는 게임입니다.', tag:'#Unity #CS #Mobile', date: '2021. 01. ~'}]
+        {image: require('@/assets/projectImages/BioLab.png'), link: 'https://github.com/EDEN1109/BioLab/wiki', title: 'BioLab', content: '백신을 제작해 질병으로 인해 인류가 멸망하는 것을 디펜스 하는 게임.', tag:'#Unity #CS #VR #PC', date: '2020. 07. ~ 2020. 08.'},
+        {image: require('@/assets/projectImages/VRCamera.png'), link: 'https://github.com/EDEN1109/VRCamera/wiki', title: 'VR Camera', content: 'VR 컨텐츠의 플랫폼 변경(PC와 태블렛, 모바일 등)을 자동으로 해주는 VR 카메라입니다.', tag:'#Unity #CS #PC #Mobile #Tablet #Web', date: '2020. 08.'}, 
+        {image: require('@/assets/projectImages/Seconds.png'), link: 'https://github.com/EDEN1109/Seconds/wiki', title: 'Seconds', content: '모바일 순간 액션게임으로 순발력을 발휘하여 스테이지를 클리어하는 게임입니다.', tag:'#Unity #CS #Mobile', date: '2021. 01. ~'}]
     }
   }
 }
