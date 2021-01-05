@@ -70,11 +70,10 @@
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
-                width: 95%;
+                width: 100%;
                 margin-top: 90px;
 
                 .skill_item {
-                    
                     &:hover {
                         transform: scale(1.05);
                         transition: 0.3s;
